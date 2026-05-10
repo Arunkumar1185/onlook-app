@@ -18,7 +18,7 @@
     "devDependencies": {
         "@onlook/typescript": "*",
         "@types/node": "^20.0.0",
-        "typescript": "^5.5.4"
+        "typescript": "^6.0.3"
     },
     "prettier": "@onlook/prettier"
 }
