@@ -2,7 +2,15 @@
   "$schema": "https://railway.com/railway.schema.json",
   "build": {
     "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+    "dockerfilePath": "Dockerfile",
+    "buildArgs": {
+      "CSB_API_KEY": "${{ CSB_API_KEY }}",
+      "SUPABASE_DATABASE_URL": "${{ SUPABASE_DATABASE_URL }}",
+      "SUPABASE_SERVICE_ROLE_KEY": "${{ SUPABASE_SERVICE_ROLE_KEY }}",
+      "OPENROUTER_API_KEY": "${{ OPENROUTER_API_KEY }}",
+      "NEXT_PUBLIC_SUPABASE_URL": "${{ NEXT_PUBLIC_SUPABASE_URL }}",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY": "${{ NEXT_PUBLIC_SUPABASE_ANON_KEY }}"
+    }
   },
   "deploy": {
     "healthcheckPath": "/",
