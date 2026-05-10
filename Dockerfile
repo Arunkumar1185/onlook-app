@@ -1,5 +1,5 @@
 # Build Onlook web client
-FROM oven/bun:1.3.1
+FROM oven/bun:1.3.9
 
 WORKDIR /app
 
